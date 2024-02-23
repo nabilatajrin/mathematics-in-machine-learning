@@ -14,3 +14,9 @@ print(np.median(be_consumption['consumption']))
 # Calculate mean and median consumption in USA
 print(np.mean(usa_consumption['consumption']))
 print(np.median(usa_consumption['consumption']))
+
+# Subset for Belgium and USA only
+be_and_usa = food_consumption[(food_consumption['country'] == "Belgium") | (food_consumption['country'] == 'USA')]
+
+# Group by country, select consumption column, and compute mean and median
+print(be_and_usa.groupby('country')['consumption'].agg([np.mean, np.median]))
