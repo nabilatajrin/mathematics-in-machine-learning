@@ -1,1 +1,1 @@
-# mathematics-with-python-introduction-to-statisticsp-in-python
+# mathematics-with-python
