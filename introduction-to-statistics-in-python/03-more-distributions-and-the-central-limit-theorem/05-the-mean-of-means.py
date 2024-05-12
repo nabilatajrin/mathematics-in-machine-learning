@@ -1,5 +1,5 @@
 # Set seed to 321
-seed = 321
+np.random.seed(321)
 
 sample_means = []
 # Loop 30 times to take 30 means
